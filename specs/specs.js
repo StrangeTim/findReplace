@@ -4,14 +4,14 @@ describe('findReplace', function() {
     var phrase = "change";
     var findWord = "change";
     phrase = findReplace([phrase, findWord, "word"]);
-    expect(phrase).to.equal("word");
+    expect(phrase[0]).to.equal("word");
   });
 
   it("changes only the desired word in a phrase", function () {
     var phrase = "only change the desired word to be changed";
     var findWord = "change";
     phrase = findReplace([phrase, findWord, "update"]);
-    expect(phrase).to.equal("only update the desired word to be changed");
+    expect(phrase[0]).to.equal("only update the desired word to be changed");
   });
 
 });

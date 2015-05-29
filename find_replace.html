@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Find and replace</title>
+</head>
+<body background="./css/images/bgimage.jpg">
+  <div class="container">
+    <div class="stroke">
+      <h1>Is repetition a problem?</h1>
+      <h3>Do you find that you use a word too often?  Want to change it to something else?</h3>
+    </div>
+
+    <form id="findReplace">
+      <div class="form-group">
+        <div class="stroke"><label for="phrase">Paste your text here:</label><br></div>
+        <input name="phrase" id="phrase" size="100" type="text"></input><br>
+        <div class="stroke"><label for="findWord">Word to be changed:</label></div>
+        <input name="findWord" id="findWord" type="text">
+        <div class="stroke"><label for="replaceWord">&nbsp&nbsp&nbsp&nbspChange to:</label></div>
+        <input name="replaceWord" id="replaceWord" type="text"><br>
+        <div class="stroke"><label for="percent">What percentage of occurances would you like to change?</label></div>
+        <input name="percent" id="percent" type="text" placeholder="50%" size="4" value="50">%
+        <div class="stroke"><h5>Defaults to 50%, maximum 100% ( THIS FEATURE IS NOT YET WORKING )</h5></div>
+      </div>
+      <button type="submit" id="submit" class="btn btn-info" >Submit</button>
+    </form>
+    <br><br><br>
+    <div id="result">
+      <div class="stroke">
+        <p>Replaced <span class="findWord"></span> with <span class="replaceWord">
+          </span> <span class="counter"></span> times.</p>
+        <p>
+        Your updated text: <br>
+        <span class="new_words"></span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
